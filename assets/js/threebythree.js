@@ -16,6 +16,8 @@ define(['jquery'], function($) {
       $('input[name=mode]').on('change', function(e) {
         that.changeMode(e);
       });
+      $('p[data-action="lose"]').hide();
+
     },
 
     startGame: function() {
@@ -23,7 +25,6 @@ define(['jquery'], function($) {
       this.copy = [];
       this.round = 0;
       this.active = true;
-      $('p[data-action="lose"]').hide();
       this.newRound();
     },
 
