@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 9 ]> <html lang="en-GB" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="initial-scale=1">
+		<title>3x3</title>
+		<link href="assets/css/screen.css" rel="stylesheet" type="text/css" media="all"/>
+		<!-- Modernizer, custom build focusing on CSS3 styling & CSS animations with some extras -->
+		<script src="assets/js/require.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+		<h1 class="animated slideInDown">Click start to begin</h1>
+
+				<div class="game-board">
+
+					<div class="threebythree">
+
+						<ul>
+							<li class="square-1 tile" data-tile="1"></li>
+							<li class="square-2 tile" data-tile="2"></li>
+							<li class="square-3 tile" data-tile="3"></li>
+							<li class="square-4 tile" data-tile="4"></li>
+							<li class="square-5 tile" data-tile="5"></li>
+							<li class="square-6 tile" data-tile="6"></li>
+							<li class="square-7 tile" data-tile="7"></li>
+							<li class="square-8 tile" data-tile="8"></li>
+							<li class="square-9 tile" data-tile="9"></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="game-info animated slideInUp">
+
+					<h2>Round: <span data-round="0">0</span></h2>
+
+					<p data-action="lose">You managed <span data-round="0"></span> rounds, see if you can do better!</p>
+
+					<button data-action="start">Start</button>
+
+				</div>
+
+				<div class="message-box"><!--contains prompt message-->
+				</div>
+
+			<div data-action="sound"></div><!-- hidden, for audio use only-->
+
+		</div>
+
+
+		<script src="assets/js/script.js"></script>
+
+	</body>
+
+</html>
